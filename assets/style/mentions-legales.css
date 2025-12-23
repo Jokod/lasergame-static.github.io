@@ -1,0 +1,75 @@
+/* ============================================
+   MENTIONS LEGALES PAGE STYLES
+   ============================================ */
+
+/* Legal Content */
+.legal-content h2 {
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-dark);
+}
+
+.legal-content h3 {
+    color: var(--primary);
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.legal-content p {
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+    color: var(--text-secondary);
+}
+
+.legal-content ul.legal-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.legal-content ul.legal-list li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.legal-content ul.legal-list li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.legal-content .link-primary {
+    color: var(--primary);
+    text-decoration: underline;
+    transition: color var(--transition);
+}
+
+.legal-content .link-primary:hover {
+    color: var(--accent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .legal-content h2 {
+        font-size: 1.25rem;
+    }
+    
+    .legal-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    .legal-content p {
+        font-size: 0.95rem;
+    }
+}
+
+

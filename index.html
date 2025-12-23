@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Laser Game Gap - Centre de loisirs avec laser game, lancer de haches et salle d'arcade. Parfait pour anniversaires, EVG/EVJF et team building.">
+    <title>Laser Game Gap | Lancer de Haches & Salle d'Arcade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#accueil" class="nav-logo">
+                <img src="assets/images/logo.png" alt="Laser Game Gap" class="logo-img">
+            </a>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#activites" class="nav-link">Activités</a></li>
+                <li><a href="#tarifs" class="nav-link">Tarifs</a></li>
+                <li class="nav-dropdown">
+                    <a href="#formules" class="nav-link">
+                        Formules
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#formules-anniversaire" class="dropdown-link">Anniversaire</a></li>
+                        <li><a href="#formules-evjf" class="dropdown-link">EVG/EVJF</a></li>
+                        <li><a href="#formules-team-building" class="dropdown-link">Team Building</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="tel:0781547691" class="nav-cta">07.81.54.76.91</a></li>
+            </ul>
+            
+            <div class="nav-social">
+                <a href="https://www.facebook.com/LaserGamesGap" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/lasergamesgap" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Reservation Notice -->
+    <div class="reservation-banner">
+        <div class="container">
+            <div class="reservation-content">
+                <span class="reservation-icon">📞</span>
+                <span class="reservation-text">
+                    <strong>SUR RÉSERVATION UNIQUEMENT</strong><span class="reservation-text-phone"> - Appelez-nous au 07.81.54.76.91</span>
+                <a href="tel:0781547691" class="reservation-btn">Réserver</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-background">
+            <img src="assets/images/background_lasergamegap.png" alt="" class="hero-bg-image" loading="eager">
+            <div class="hero-gradient"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-main">Laser Game Gap</span>
+                <span class="title-sub">Laser Game • Lancer de Haches • Salle d'Arcade</span>
+            </h1>
+            <p class="hero-description">
+                Plongez dans l'action avec notre laser game nouvelle génération, 
+                testez votre précision au lancer de haches, et revivez les classiques 
+                dans notre salle d'arcade.
+            </p>
+            <div class="hero-hours">
+                <div class="hero-hours-main">Mercredi - Dimanche : 10h - 23h</div>
+                <div class="hero-hours-note">(Variable pendant les périodes de vacances scolaires et jours fériés)</div>
+            </div>
+            <div class="hero-actions">
+                <a href="#tarifs" class="btn btn-primary">Voir les tarifs</a>
+                <a href="tel:0781547691" class="btn btn-secondary">
+                    <span class="btn-icon">📞</span>
+                    Réserver maintenant
+                </a>
+            </div>
+            
+            <div class="hero-info">
+                <div class="info-item">
+                    <span class="info-icon">🔫</span>
+                    <span class="info-text">24 Joueurs simultanés</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">👶</span>
+                    <span class="info-text">À partir de 7-8 ans (~1m30)</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">⏱️</span>
+                    <span class="info-text">Parties de 20 min</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🧩</span>
+                    <span class="info-text">2 Labyrinthes de 250m²</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Présentation -->
+    <section class="section section-intro section-with-particles">
+        <div class="particles-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Bienvenue au Laser Game Gap</h2>
+                <p class="section-subtitle">
+                    Le centre de loisirs incontournable pour tous les amateurs de sensations fortes
+                </p>
+            </div>
+            
+            <div class="intro-content">
+                <p class="intro-text">
+                    Nous sommes fiers de proposer des activités innovantes et excitantes, 
+                    qui sauront plaire aux joueurs de tous niveaux et de tous âges.<br> 
+                    Notre objectif est de créer une <strong>expérience de jeu amusante, 
+                    excitante et mémorable</strong> pour tous nos clients.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activités -->
+    <section id="activites" class="section section-activities">
+        <div class="container-wide">
+            <div class="section-header">
+                <h2 class="section-title">Nos Activités</h2>
+                <p class="section-subtitle">Découvrez notre gamme complète d'activités pour tous les âges</p>
+            </div>
+            
+            <div class="activities-grid">
+                <div class="activity-popular">
+                    <div class="activity-badge">Populaire</div>
+                    <article class="activity-card activity-card-featured">
+                        <div class="activity-icon">🔫</div>
+                        <h3 class="activity-title">Laser Game</h3>
+                        <p class="activity-description">
+                            Affrontez vos amis dans nos deux labyrinthes immersifs. 
+                            Réflexes, stratégie et adrénaline garantis !
+                        </p>
+                        <ul class="activity-features">
+                            <li>2 labyrinthes avec étage</li>
+                            <li>Jusqu'à 24 joueurs simultanés</li>
+                            <li>Session de 20 minutes</li>
+                            <li>Équipement de pointe</li>
+                        </ul>
+                    </article>
+                </div>
+                
+                <article class="activity-card">
+                    <div class="activity-icon">🪓</div>
+                    <h3 class="activity-title">Lancer de Haches</h3>
+                    <p class="activity-description">
+                        Testez votre précision et votre concentration dans une ambiance 
+                        conviviale et sécurisée.
+                    </p>
+                    <ul class="activity-features">
+                        <li>Sessions d'1 heure</li>
+                        <li>Encadrement professionnel</li>
+                        <li>Options Shuriken & Pelle</li>
+                        <li>Pistes multiples disponibles</li>
+                    </ul>
+                </article>
+                
+                <article class="activity-card">
+                    <div class="activity-icon">🎮</div>
+                    <h3 class="activity-title">Salle d'Arcade</h3>
+                    <p class="activity-description">
+                        Retombez en enfance avec nos bornes d'arcade classiques 
+                        et modernes.
+                    </p>
+                    <ul class="activity-features">
+                        <li>Jeux classiques et modernes</li>
+                        <li>Idéal après une partie de jeu</li>
+                        <li>Accès libre et parties rapides</li>
+                        <li>Pour tous les âges</li>
+                    </ul>
+                </article>
+                
+                <article class="activity-card">
+                    <div class="activity-icon">🎉</div>
+                    <h3 class="activity-title">Salle Anniversaire</h3>
+                    <p class="activity-description">
+                        Privatisez notre salle pour célébrer vos événements spéciaux 
+                        dans un cadre unique.
+                    </p>
+                    <ul class="activity-features">
+                        <li>Salle privatisée 1h</li>
+                        <li>Gâteaux & pizzas disponibles</li>
+                        <li>Boissons incluses</li>
+                        <li>Couvert et accessoires inclus</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie Photo -->
+    <section class="section section-gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Notre Univers en Images</h2>
+                <p class="section-subtitle">Découvrez l'ambiance et les installations de Laser Game Gap</p>
+            </div>
+        </div>
+        
+        <div class="infinite-slider" id="infiniteSlider">
+            <div class="slider-track" id="sliderTrack">
+                <div class="slider-item">
+                    <img src="assets/images/gallery/Photo-airlock-1024x683.jpg" alt="Sas d'entrée Laser Game" loading="lazy">
+                    <div class="slider-overlay">
+                        <p>Sas d'Entrée</p>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img src="assets/images/gallery/Photo-terrain-2-1024x683.jpg" alt="Terrain Laser Game 2" loading="lazy">
+                    <div class="slider-overlay">
+                        <p>Terrain 2</p>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img src="assets/images/gallery/Terrain-1.jpg" alt="Terrain Laser Game 1" loading="lazy">
+                    <div class="slider-overlay">
+                        <p>Terrain 1</p>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img src="assets/images/gallery/terrain1.2.jpg" alt="Vue Terrain 1" loading="lazy">
+                    <div class="slider-overlay">
+                        <p>Vue du Terrain</p>
+                    </div>
+                </div>
+                <!-- Les items seront dupliqués automatiquement par JS pour l'effet infini -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarifs -->
+    <section id="tarifs" class="section section-pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nos Tarifs et Formules</h2>
+                <p class="section-subtitle">Des prix adaptées à tous vos besoins</p>
+            </div>
+            
+            <!-- Laser Game Standard -->
+            <div class="pricing-category">
+                <h3 class="pricing-category-title">Laser Game - Prix Standard</h3>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <div class="pricing-duration">1 Partie</div>
+                            <div class="pricing-time">20 minutes</div>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-amount">10</span>
+                            <span class="price-currency">€</span>
+                        </div>
+                        <div class="pricing-per">par personne</div>
+                    </div>
+                    
+                    <div class="pricing-card pricing-card-popular">
+                        <div class="pricing-badge">Meilleur choix</div>
+                        <div class="pricing-header">
+                            <div class="pricing-duration">2 Parties</div>
+                            <div class="pricing-time">2 x 20 minutes</div>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-amount">17</span>
+                            <span class="price-currency">€</span>
+                        </div>
+                        <div class="pricing-per">par personne</div>
+                        <div class="pricing-save">Économisez 3€</div>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <div class="pricing-duration">3 Parties</div>
+                            <div class="pricing-time">3 x 20 minutes</div>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-amount">24</span>
+                            <span class="price-currency">€</span>
+                        </div>
+                        <div class="pricing-per">par personne</div>
+                        <div class="pricing-save">Économisez 6€</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tarifs de Groupe -->
+            <div class="pricing-category">
+                <h3 class="pricing-category-title">
+                    Tarifs de Groupe
+                    <span class="pricing-note">À partir de 15 personnes</span>
+                </h3>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-duration">1 Partie</div>
+                        <div class="pricing-time">20 minutes</div>
+                        <div class="pricing-price">
+                            <span class="price-amount">9</span>
+                            <span class="price-currency">€</span>
+                        </div>
+                        <div class="pricing-per">par personne</div>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-duration">2 Parties</div>
+                        <div class="pricing-time">2 x 20 minutes</div>
+                        <div class="pricing-price">
+                            <span class="price-amount">16</span>
+                            <span class="price-currency">€</span>
+                        </div>
+                        <div class="pricing-per">par personne</div>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-duration">3 Parties</div>
+                        <div class="pricing-time">3 x 20 minutes</div>
+                        <div class="pricing-price">
+                            <span class="price-amount">23</span>
+                            <span class="price-currency">€</span>
+                        </div>
+                        <div class="pricing-per">par personne</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lancer de Haches -->
+            <div class="pricing-category axe-throwing-section">
+                <h3 class="pricing-category-title">🪓 Lancer de Haches</h3>
+                
+                <div class="axe-throwing-content">
+                    <div class="axe-prices-container">
+                        <div class="axe-main-price">
+                            <div class="pricing-card pricing-card-featured pricing-card-large">
+                                <div class="pricing-header">
+                                    <div class="pricing-duration">Session complète</div>
+                                    <div class="pricing-time">1 heure</div>
+                                </div>
+                                <div class="pricing-price">
+                                    <span class="price-amount">16</span>
+                                    <span class="price-currency">€</span>
+                                </div>
+                                <div class="pricing-per">par personne</div>
+                                <div class="pricing-features">
+                                    <p>✓ Encadrement professionnel</p>
+                                    <p>✓ Équipement fourni</p>
+                                    <p>✓ Sécurité garantie</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="axe-main-price">
+                            <div class="pricing-card pricing-card-featured pricing-card-large">
+                                <div class="pricing-header">
+                                    <div class="pricing-duration">Formule Duo</div>
+                                    <div class="pricing-time">Laser Game + Lancer de haches</div>
+                                </div>
+                                <div class="pricing-price">
+                                    <span class="price-amount">30</span>
+                                    <span class="price-currency">€</span>
+                                </div>
+                                <div class="pricing-per">par personne</div>
+                                <div class="pricing-features">
+                                    <p>✓ 2 parties de 20 minutes de Laser Game</p>
+                                    <p>✓ 1 heure de Lancer de haches</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="axe-options-wrapper">
+                        <div class="pricing-options">
+                            <h4 class="options-title">⚡ Options supplémentaires</h4>
+                            <div class="options-grid-enhanced">
+                                <div class="option-card">
+                                    <div class="option-icon">🥷</div>
+                                    <div class="option-details">
+                                        <span class="option-name">Shuriken</span>
+                                        <span class="option-desc">Lancer de shurikens ninja</span>
+                                    </div>
+                                    <span class="option-price">+8€/piste</span>
+                                </div>
+                                <div class="option-card">
+                                    <div class="option-icon">🪏</div>
+                                    <div class="option-details">
+                                        <span class="option-name">Pelle Américaine</span>
+                                        <span class="option-desc">Technique western</span>
+                                    </div>
+                                    <span class="option-price">+8€/piste</span>
+                                </div>
+                                <div class="option-card option-card-combo">
+                                    <div class="combo-badge">Combo</div>
+                                    <div class="option-icon">⚔️</div>
+                                    <div class="option-details">
+                                        <span class="option-name">Shuriken + Pelle</span>
+                                        <span class="option-desc">L'expérience complète</span>
+                                    </div>
+                                    <span class="option-price">+14€/piste</span>
+                                </div>
+                                <div class="option-card">
+                                    <div class="option-icon">➕</div>
+                                    <div class="option-details">
+                                        <span class="option-name">Piste supplémentaire</span>
+                                        <span class="option-desc">Pour plus de joueurs</span>
+                                    </div>
+                                    <span class="option-price">25€</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formules Spéciales -->
+    <section id="formules" class="section section-packages">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Formules Spéciales</h2>
+                <p class="section-subtitle">Pour vos événements exceptionnels</p>
+            </div>
+            
+            <!-- Anniversaire -->
+            <div id="formules-anniversaire" class="package-category">
+                <div class="package-header">
+                    <h3 class="package-title">🎂 Formule Anniversaire</h3>
+                    <p class="package-description">Célébrez votre anniversaire dans un cadre unique</p>
+                </div>
+                
+                <div class="package-variants">
+                    <h4 class="variant-title">Avec gâteau OU pizza</h4>
+                    <div class="pricing-grid">
+                        <div class="pricing-card">
+                            <div class="pricing-duration">1 Partie</div>
+                            <div class="pricing-time">20 minutes</div>
+                            <div class="pricing-price">
+                                <span class="price-amount">15</span>
+                                <span class="price-currency">€</span>
+                            </div>
+                            <div class="pricing-per">par personne</div>
+                        </div>
+                        <div class="pricing-card">
+                            <div class="pricing-duration">2 Parties</div>
+                            <div class="pricing-time">2 x 20 minutes</div>
+                            <div class="pricing-price">
+                                <span class="price-amount">22</span>
+                                <span class="price-currency">€</span>
+                            </div>
+                            <div class="pricing-per">par personne</div>
+                        </div>
+                        <div class="pricing-card">
+                            <div class="pricing-duration">3 Parties</div>
+                            <div class="pricing-time">3 x 20 minutes</div>
+                            <div class="pricing-price">
+                                <span class="price-amount">29</span>
+                                <span class="price-currency">€</span>
+                            </div>
+                            <div class="pricing-per">par personne</div>
+                        </div>
+                    </div>
+                    
+                    <h4 class="variant-title">Avec gâteau ET pizza</h4>
+                    <div class="pricing-grid">
+                        <div class="pricing-card">
+                            <div class="pricing-duration">1 Partie</div>
+                            <div class="pricing-time">20 minutes</div>
+                            <div class="pricing-price">
+                                <span class="price-amount">20</span>
+                                <span class="price-currency">€</span>
+                            </div>
+                            <div class="pricing-per">par personne</div>
+                        </div>
+                        <div class="pricing-card">
+                            <div class="pricing-duration">2 Parties</div>
+                            <div class="pricing-time">2 x 20 minutes</div>
+                            <div class="pricing-price">
+                                <span class="price-amount">27</span>
+                                <span class="price-currency">€</span>
+                            </div>
+                            <div class="pricing-per">par personne</div>
+                        </div>
+                        <div class="pricing-card">
+                            <div class="pricing-duration">3 Parties</div>
+                            <div class="pricing-time">3 x 20 minutes</div>
+                            <div class="pricing-price">
+                                <span class="price-amount">34</span>
+                                <span class="price-currency">€</span>
+                            </div>
+                            <div class="pricing-per">par personne</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="package-includes">
+                    <h4 class="includes-title">Inclus dans la formule</h4>
+                    <ul class="includes-list">
+                        <li>Salle privatisée pendant 1 heure</li>
+                        <li>Boissons en quantité</li>
+                        <li>Tous les accessoires nécessaires</li>
+                        <li>
+                            Votre gâteau est commandé auprès de notre traiteur partenaire 
+                            <a href="https://www.safraneetpaprika.fr/" target="_blank" class="link-primary">Safran & Paprika</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="package-info-warning">
+                    <h4 class="info-warning-title">Informations utiles</h4>
+                    <div class="info-warning-content">
+                        <p>
+                            Nous travaillons avec une boulangerie artisanale pour la confection des gâteaux d'anniversaire. 
+                            Si l'un des enfants possède des allergies, pensez a nous prévenir, nous ferons notre demande en fonction à notre boulangère.
+                        </p>
+                        <p>
+                            Pour des raisons de responsabilité nous acceptons uniquement l'apport de bonbons et de bouteilles d'eau.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="package-accordion">
+                    <button class="accordion-button" type="button">
+                        <span class="accordion-title">Organisation de l'anniversaire</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p><strong>La date :</strong> plus tôt vous réservez, plus tôt vous vous assurez d'avoir le créneau qui vous conviendra. La réservation de cette formule doit se faire au maximum 1 semaine à l'avance.</p>
+                            
+                            <p><strong>La réservation :</strong> le plus simple est de nous contacter par téléphone au <a href="tel:0781547691" class="link-primary">07.81.54.76.91</a> ou nous envoyer un courriel en nous communiquant vos coordonnées téléphoniques.</p>
+                            
+                            <p>Le minimum de participants pour la formule anniversaire est de <strong>6 personnes</strong> (Le tarif reste inchangé en dessous du minimum de participants).</p>
+                            
+                            <p>En cas d'absence le jour de la prestation, un montant de <strong>5€ par personne manquante</strong> sera demandé. À partir de 3 personnes manquantes la tarification complète de la formule sera due.</p>
+                            
+                            <p>Le nombre de participants et le choix du gâteau sont à confirmer maximum 1 semaine à l'avance.</p>
+                            
+                            <p><strong class="text-warning">ATTENTION :</strong> Toute personne ajoutée à la dernière minute sera facturée du montant de la formule complète.</p>
+                            
+                            <p>Nous demandons un <strong>acompte de 100€</strong> au plus tôt afin de finaliser la réservation. (maximum 1 semaine à l'avance)</p>
+                            
+                            <p>Nous vous proposons un <a href="assets/files/Carton-anniversaire.pdf" target="_blank" class="link-primary">carton d'invitation à télécharger</a> directement sur le site ou a venir récupérer sur place.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- EVG/EVJF -->
+            <div id="formules-evjf" class="package-category">
+                <div class="package-header">
+                    <h3 class="package-title">🎊 Formules EVG / EVJF</h3>
+                    <p class="package-description">L'enterrement de vie parfait avec vos amis</p>
+                </div>
+                
+                <div class="evg-packages">
+                    <div class="evg-card evg-card-featured">
+                        <div class="evg-badge">Formule Duo</div>
+                        <h4 class="evg-title">Laser Game + Lancer de Haches</h4>
+                        <div class="evg-content">
+                            <div class="evg-price">
+                                <span class="price-amount">30</span>
+                                <span class="price-currency">€</span>
+                                <span class="price-per">/ personne</span>
+                            </div>
+                            <ul class="evg-details">
+                                <li>2 parties de 20 min de Laser Game</li>
+                                <li>1 heure de Lancer de Haches</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="evg-card">
+                        <h4 class="evg-title">Laser Game<br>uniquement</h4>
+                        <div class="evg-content">
+                            <div class="evg-price">
+                                <span class="price-amount">17</span>
+                                <span class="price-currency">€</span>
+                                <span class="price-per">/ personne</span>
+                            </div>
+                            <ul class="evg-details">
+                                <li>2 parties de 20 minutes</li>
+                                <li>Parties jusqu'à 24 joueurs</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="evg-card">
+                        <h4 class="evg-title">Lancer de Haches<br>uniquement</h4>
+                        <div class="evg-content">
+                            <div class="evg-price">
+                                <span class="price-amount">16</span>
+                                <span class="price-currency">€</span>
+                                <span class="price-per">/ personne</span>
+                            </div>
+                            <ul class="evg-details">
+                                <li>1 heure de session</li>
+                                <li>Pistes multiples disponibles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team Building -->
+            <div id="formules-team-building" class="package-category">
+                <div class="team-building-card">
+                    <div class="team-building-content">
+                        <div class="team-building-icon">👔</div>
+                        <h3 class="team-building-title">Team Building sur mesure</h3>
+                        <p class="team-building-description">
+                            Renforcez la cohésion de votre équipe avec nos activités adaptées. 
+                            Tarifs personnalisés selon vos besoins et le nombre de participants.
+                        </p>
+                        <a href="tel:0781547691" class="btn btn-secondary">Demander un devis</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contactez-nous</h2>
+                <p class="section-subtitle">Nous sommes là pour répondre à toutes vos questions</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3 class="contact-label">Téléphone</h3>
+                            <a href="tel:0781547691" class="contact-value">07.81.54.76.91</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🌐</div>
+                        <div class="contact-details">
+                            <h3 class="contact-label">Site web</h3>
+                            <a href="https://lasergamesgap.fr" target="_blank" class="contact-value">lasergamesgap.fr</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📘</div>
+                        <div class="contact-details">
+                            <h3 class="contact-label">Facebook</h3>
+                            <a href="https://www.facebook.com/LaserGamesGap" target="_blank" class="contact-value">Laser Games Gap</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📷</div>
+                        <div class="contact-details">
+                            <h3 class="contact-label">Instagram</h3>
+                            <a href="https://www.instagram.com/lasergamesgap" target="_blank" class="contact-value">@lasergamesgap</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9561.243955904694!2d6.083395502241295!3d44.56480587046109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cb41b4055dc643%3A0x25dfe64b26bce5aa!2sLaserGamesGap!5e0!3m2!1sfr!2sfr!4v1682564517018!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+                <div class="contact-cta">
+                    <div class="cta-badge">Réservation obligatoire</div>
+                    <h3 class="cta-title">Prêt à réserver ?</h3>
+                    <p class="cta-description">
+                        <strong>Attention :</strong> Toutes nos activités sont <strong>sur réservation uniquement</strong>. 
+                        Appelez-nous dès maintenant pour réserver votre session ou 
+                        poser vos questions. Notre équipe est à votre écoute !
+                    </p>
+                    <a href="tel:0781547691" class="btn btn-primary btn-large">
+                        <span class="btn-icon">📞</span>
+                        Réserver - 07.81.54.76.91
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.png" alt="Laser Game Gap" class="footer-logo-img">
+                    </div>
+                    <p class="footer-tagline">
+                        Créer une expérience de jeu amusante, excitante et mémorable 
+                        pour tous nos clients.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Navigation</h4>
+                        <ul class="footer-list">
+                            <li><a href="#accueil">Accueil</a></li>
+                            <li><a href="#activites">Activités</a></li>
+                            <li><a href="#tarifs">Tarifs</a></li>
+                            <li><a href="#formules">Formules</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Contact</h4>
+                        <ul class="footer-list">
+                            <li><a href="tel:0781547691">07.81.54.76.91</a></li>
+                            <li><a href="https://lasergamesgap.fr">lasergamesgap.fr</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Réseaux sociaux</h4>
+                        <ul class="footer-list">
+                            <li><a href="https://www.facebook.com/LaserGamesGap" target="_blank">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/lasergamesgap" target="_blank">Instagram</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Informations</h4>
+                        <ul class="footer-list">
+                            <li><a href="mentions-legales.html">Mentions légales</a></li>
+                            <li><a href="plan-du-site.html">Plan du site</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Laser Game Gap. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA Button -->
+    <a href="tel:0781547691" class="floating-cta" id="floatingCta" aria-label="Réserver maintenant">
+        <span class="floating-cta-icon">📞</span>
+        <span class="floating-cta-text">Réserver</span>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slider.js"></script>
+</body>
+</html>
