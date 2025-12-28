@@ -56,30 +56,15 @@ document.addEventListener('click', (e) => {
 // ============================================
 // DROPDOWN MENU
 // ============================================
-// Toggle dropdown menu on mobile (click instead of hover)
-const navDropdown = document.querySelector('.nav-dropdown');
-const dropdownToggle = navDropdown?.querySelector('.nav-link');
+// Sur mobile, le dropdown est toujours visible, donc pas besoin de toggle
+// Sur desktop, le dropdown fonctionne au survol (via CSS)
 
-if (window.innerWidth <= 1000 && dropdownToggle) {
-    dropdownToggle.addEventListener('click', (e) => {
-        e.preventDefault();
-        navDropdown?.classList.toggle('active');
-    });
-}
-
-// Update dropdown behavior on window resize
-window.addEventListener('resize', () => {
-    if (window.innerWidth > 1000) {
-        navDropdown?.classList.remove('active');
-    }
-});
-
-// Close dropdown links on mobile
+// Fermer le menu mobile quand on clique sur un lien du dropdown
 document.querySelectorAll('.dropdown-link').forEach(link => {
     link.addEventListener('click', () => {
+        // Fermer le menu mobile
         navMenu?.classList.remove('active');
         navToggle?.classList.remove('active');
-        navDropdown?.classList.remove('active');
         
         // Reset burger icon
         const spans = navToggle?.querySelectorAll('span');
@@ -89,6 +74,19 @@ document.querySelectorAll('.dropdown-link').forEach(link => {
         });
     });
 });
+
+// Sur mobile, empêcher le comportement par défaut du lien "Formules" pour éviter la navigation
+const navDropdown = document.querySelector('.nav-dropdown');
+const dropdownToggle = navDropdown?.querySelector('.nav-link');
+
+if (window.innerWidth <= 1000 && dropdownToggle) {
+    dropdownToggle.addEventListener('click', (e) => {
+        // Sur mobile, on ne veut pas naviguer vers #formules, juste afficher les liens
+        // Les liens sont déjà visibles grâce au CSS, donc on peut laisser le comportement par défaut
+        // ou empêcher la navigation si on veut garder le menu ouvert
+        // Pour l'instant, on laisse le comportement par défaut pour permettre la navigation
+    });
+}
 
 // ============================================
 // SCROLL EFFECTS
