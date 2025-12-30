@@ -336,22 +336,6 @@ if (!document.getElementById('ripple-animation')) {
 }
 
 // ============================================
-// PARALLAX EFFECT ON HERO
-// ============================================
-const hero = document.querySelector('.hero');
-const heroContent = document.querySelector('.hero-content');
-
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const parallaxSpeed = 0.5;
-    
-    if (heroContent && scrolled < hero?.offsetHeight) {
-        heroContent.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
-        heroContent.style.opacity = 1 - (scrolled / 800);
-    }
-});
-
-// ============================================
 // LAZY LOADING FOR FUTURE IMAGES
 // ============================================
 if ('IntersectionObserver' in window) {
@@ -471,42 +455,8 @@ if (floatingCta && !document.getElementById('floating-cta-style')) {
     document.head.appendChild(style);
 }
 
-// ============================================
-// ACCORDION
-// ============================================
-const accordionButtons = document.querySelectorAll('.accordion-button');
-
-accordionButtons.forEach(button => {
-    button.addEventListener('click', function() {
-        const content = this.nextElementSibling;
-        const isActive = this.classList.contains('active');
-        
-        // Close all accordions
-        accordionButtons.forEach(btn => {
-            btn.classList.remove('active');
-            const btnContent = btn.nextElementSibling;
-            if (btnContent) {
-                btnContent.style.maxHeight = null;
-                btnContent.classList.remove('active');
-            }
-        });
-        
-        // Open clicked accordion if it was closed
-        if (!isActive && content) {
-            this.classList.add('active');
-            content.classList.add('active');
-            content.style.maxHeight = content.scrollHeight + 'px';
-        }
-    });
-});
-
-// ============================================
-// INIT
-// ============================================
 document.addEventListener('DOMContentLoaded', () => {
-    // Initial navigation highlight
     highlightNavigation();
     
-    // Log initialization
     console.log('%c✓ Site initialized successfully', 'color: #00D9FF; font-weight: bold;');
 });

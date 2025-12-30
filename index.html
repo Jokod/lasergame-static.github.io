@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="assets/style/gallery-carousel.css">
     <link rel="icon" type="image/png" href="assets/images/favicon.ico">
 </head>
 <body>
@@ -76,16 +78,18 @@
             <div class="hero-gradient"></div>
         </div>
         
-        <div class="hero-content">
+        <div class="hero-content container-medium">
             <h1 class="hero-title">
                 <span class="title-main">Laser Game Gap</span>
                 <span class="title-sub">Laser Game • Lancer de Haches • Salle d'Arcade</span>
             </h1>
-            <p class="hero-description">
-                Plongez dans l'action avec notre laser game nouvelle génération, 
-                testez votre précision au lancer de haches, et revivez les classiques 
-                dans notre salle d'arcade.
-            </p>
+            <div class="container-small">
+                <p class="hero-description">
+                    Plongez dans l'action avec notre laser game nouvelle génération, 
+                    testez votre précision au lancer de haches, et revivez les classiques 
+                    dans notre salle d'arcade.
+                </p>
+            </div>
             <div class="hero-hours">
                 <div class="hero-hours-main">Mercredi - Dimanche : 10h - 23h</div>
                 <div class="hero-hours-note">(Variable pendant les périodes de vacances scolaires et jours fériés)</div>
@@ -128,18 +132,18 @@
         <div class="particles-bg"></div>
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Bienvenue au Laser Game Gap</h2>
-                <p class="section-subtitle">
-                    Le centre de loisirs incontournable pour tous les amateurs de sensations fortes
-                </p>
+                <div class="container-small">
+                    <h2 class="section-title">Bienvenue au Laser Game Gap</h2>
+                    <p class="section-subtitle">
+                        Un lieu de loisirs pour s'amuser, se dépasser et se retrouver.
+                    </p>
+                </div>
             </div>
             
-            <div class="intro-content">
+            <div class="intro-content container-narrow">
                 <p class="intro-text">
-                    Nous sommes fiers de proposer des activités innovantes et excitantes, 
-                    qui sauront plaire aux joueurs de tous niveaux et de tous âges.<br> 
-                    Notre objectif est de créer une <strong>expérience de jeu amusante, 
-                    excitante et mémorable</strong> pour tous nos clients.
+                    Nous proposons des <strong>activités sportives, ludiques et originales</strong>, adaptées aussi bien aux débutants qu'aux joueurs confirmés, petits et grands.
+                    Notre priorité : <strong>offrir des moments de plaisir, de rire et d'émotion à partager.</strong> 
                 </p>
             </div>
         </div>
@@ -149,8 +153,10 @@
     <section id="activites" class="section section-activities">
         <div class="container-wide">
             <div class="section-header">
-                <h2 class="section-title">Nos Activités</h2>
-                <p class="section-subtitle">Découvrez notre gamme complète d'activités pour tous les âges</p>
+                <div class="container-small">
+                    <h2 class="section-title">Nos Activités</h2>
+                    <p class="section-subtitle">Découvrez notre gamme complète d'activités pour tous les âges</p>
+                </div>
             </div>
             
             <div class="activities-grid">
@@ -227,38 +233,61 @@
     <section class="section section-gallery">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Notre Univers en Images</h2>
-                <p class="section-subtitle">Découvrez l'ambiance et les installations de Laser Game Gap</p>
+                <div class="container-small">
+                    <h2 class="section-title">Notre Univers en Images</h2>
+                    <p class="section-subtitle">Découvrez l'ambiance et les installations de Laser Game Gap</p>
+                </div>
             </div>
         </div>
         
-        <div class="infinite-slider" id="infiniteSlider">
-            <div class="slider-track" id="sliderTrack">
-                <div class="slider-item">
-                    <img src="assets/images/gallery/Photo-airlock-1024x683.jpg" alt="Sas d'entrée Laser Game" loading="lazy">
-                    <div class="slider-overlay">
-                        <p>Sas d'Entrée</p>
+        <div id="galleryCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000" data-bs-wrap="true">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery/Photo-airlock-1024x683.jpg" alt="Sas d'entrée Laser Game" loading="lazy">
+                        <div class="gallery-overlay">
+                            <p>Sas d'Entrée</p>
+                        </div>
                     </div>
                 </div>
-                <div class="slider-item">
-                    <img src="assets/images/gallery/Photo-terrain-2-1024x683.jpg" alt="Terrain Laser Game 2" loading="lazy">
-                    <div class="slider-overlay">
-                        <p>Terrain 2</p>
+                <div class="carousel-item">
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery/Photo-terrain-2-1024x683.jpg" alt="Terrain Laser Game 2" loading="lazy">
+                        <div class="gallery-overlay">
+                            <p>Terrain 2</p>
+                        </div>
                     </div>
                 </div>
-                <div class="slider-item">
-                    <img src="assets/images/gallery/Terrain-1.jpg" alt="Terrain Laser Game 1" loading="lazy">
-                    <div class="slider-overlay">
-                        <p>Terrain 1</p>
+                <div class="carousel-item">
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery/Terrain-1.jpg" alt="Terrain Laser Game 1" loading="lazy">
+                        <div class="gallery-overlay">
+                            <p>Terrain 1</p>
+                        </div>
                     </div>
                 </div>
-                <div class="slider-item">
-                    <img src="assets/images/gallery/terrain1.2.jpg" alt="Vue Terrain 1" loading="lazy">
-                    <div class="slider-overlay">
-                        <p>Vue du Terrain</p>
+                <div class="carousel-item">
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery/terrain1.2.jpg" alt="Vue Terrain 1" loading="lazy">
+                        <div class="gallery-overlay">
+                            <p>Vue du Terrain</p>
+                        </div>
                     </div>
                 </div>
-                <!-- Les items seront dupliqués automatiquement par JS pour l'effet infini -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
         </div>
     </section>
@@ -267,8 +296,10 @@
     <section id="tarifs" class="section section-pricing">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Nos Tarifs et Formules</h2>
-                <p class="section-subtitle">Des prix adaptées à tous vos besoins</p>
+                <div class="container-small">
+                    <h2 class="section-title">Nos Tarifs et Formules</h2>
+                    <p class="section-subtitle">Des prix adaptées à tous vos besoins</p>
+                </div>
             </div>
             
             <!-- Laser Game Standard -->
@@ -358,7 +389,7 @@
             <!-- Lancer de Haches -->
             <div class="pricing-category axe-throwing-section">
                 <h3 class="pricing-category-title">🪓 Lancer de Haches</h3>
-                <div class="seasonal-notice">
+                <div class="seasonal-notice container-small">
                     <span class="seasonal-icon">☀️</span>
                     <span class="seasonal-text">Ouvert uniquement en période estivale</span>
                 </div>
@@ -403,42 +434,44 @@
                         </div>
                     </div>
                     
-                    <div class="axe-options-wrapper">
-                        <div class="pricing-options">
-                            <h4 class="options-title">⚡ Options supplémentaires</h4>
-                            <div class="options-grid-enhanced">
-                                <div class="option-card">
-                                    <div class="option-icon">🥷</div>
-                                    <div class="option-details">
-                                        <span class="option-name">Shuriken</span>
-                                        <span class="option-desc">Lancer de shurikens ninja</span>
+                    <div class="axe-options-container">
+                        <div class="axe-options-wrapper">
+                            <div class="pricing-options">
+                                <h4 class="options-title">⚡ Options supplémentaires</h4>
+                                <div class="options-grid-enhanced">
+                                    <div class="option-card">
+                                        <div class="option-icon">🥷</div>
+                                        <div class="option-details">
+                                            <span class="option-name">Shuriken</span>
+                                            <span class="option-desc">Lancer de shurikens ninja</span>
+                                        </div>
+                                        <span class="option-price">+8€/piste</span>
                                     </div>
-                                    <span class="option-price">+8€/piste</span>
-                                </div>
-                                <div class="option-card">
-                                    <div class="option-icon">🪏</div>
-                                    <div class="option-details">
-                                        <span class="option-name">Pelle Américaine</span>
-                                        <span class="option-desc">Technique western</span>
+                                    <div class="option-card">
+                                        <div class="option-icon">🪏</div>
+                                        <div class="option-details">
+                                            <span class="option-name">Pelle Américaine</span>
+                                            <span class="option-desc">Technique western</span>
+                                        </div>
+                                        <span class="option-price">+8€/piste</span>
                                     </div>
-                                    <span class="option-price">+8€/piste</span>
-                                </div>
-                                <div class="option-card option-card-combo">
-                                    <div class="combo-badge">Combo</div>
-                                    <div class="option-icon">⚔️</div>
-                                    <div class="option-details">
-                                        <span class="option-name">Shuriken + Pelle</span>
-                                        <span class="option-desc">L'expérience complète</span>
+                                    <div class="option-card option-card-combo">
+                                        <div class="combo-badge">Combo</div>
+                                        <div class="option-icon">⚔️</div>
+                                        <div class="option-details">
+                                            <span class="option-name">Shuriken + Pelle</span>
+                                            <span class="option-desc">L'expérience complète</span>
+                                        </div>
+                                        <span class="option-price">+14€/piste</span>
                                     </div>
-                                    <span class="option-price">+14€/piste</span>
-                                </div>
-                                <div class="option-card">
-                                    <div class="option-icon">➕</div>
-                                    <div class="option-details">
-                                        <span class="option-name">Piste supplémentaire</span>
-                                        <span class="option-desc">Pour plus de joueurs</span>
+                                    <div class="option-card">
+                                        <div class="option-icon">➕</div>
+                                        <div class="option-details">
+                                            <span class="option-name">Piste supplémentaire</span>
+                                            <span class="option-desc">Pour plus de joueurs</span>
+                                        </div>
+                                        <span class="option-price">25€</span>
                                     </div>
-                                    <span class="option-price">25€</span>
                                 </div>
                             </div>
                         </div>
@@ -452,8 +485,10 @@
     <section id="formules" class="section section-packages">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Formules Spéciales</h2>
-                <p class="section-subtitle">Pour vos événements exceptionnels</p>
+                <div class="container-small">
+                    <h2 class="section-title">Formules Spéciales</h2>
+                    <p class="section-subtitle">Pour vos événements exceptionnels</p>
+                </div>
             </div>
             
             <!-- Anniversaire -->
@@ -527,7 +562,7 @@
                     </div>
                 </div>
                 
-                <div class="package-includes">
+                <div class="package-includes container-narrow">
                     <h4 class="includes-title">Inclus dans la formule</h4>
                     <ul class="includes-list">
                         <li>Salle privatisée pendant 1 heure</li>
@@ -540,7 +575,7 @@
                     </ul>
                 </div>
                 
-                <div class="package-info-warning">
+                <div class="package-info-warning container-narrow">
                     <h4 class="info-warning-title">Informations utiles</h4>
                     <div class="info-warning-content">
                         <p>
@@ -553,28 +588,34 @@
                     </div>
                 </div>
                 
-                <div class="package-accordion">
-                    <button class="accordion-button" type="button">
-                        <span class="accordion-title">Organisation de l'anniversaire</span>
-                        <span class="accordion-icon">+</span>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="accordion-inner">
-                            <p><strong>La date :</strong> plus tôt vous réservez, plus tôt vous vous assurez d'avoir le créneau qui vous conviendra. La réservation de cette formule doit se faire au maximum 1 semaine à l'avance.</p>
-                            
-                            <p><strong>La réservation :</strong> le plus simple est de nous contacter par téléphone au <a href="tel:0781547691" class="link-primary">07.81.54.76.91</a> ou nous envoyer un courriel en nous communiquant vos coordonnées téléphoniques.</p>
-                            
-                            <p>Le minimum de participants pour la formule anniversaire est de <strong>6 personnes</strong> (Le tarif reste inchangé en dessous du minimum de participants).</p>
-                            
-                            <p>En cas d'absence le jour de la prestation, un montant de <strong>5€ par personne manquante</strong> sera demandé. À partir de 3 personnes manquantes la tarification complète de la formule sera due.</p>
-                            
-                            <p>Le nombre de participants et le choix du gâteau sont à confirmer maximum 1 semaine à l'avance.</p>
-                            
-                            <p><strong class="text-warning">ATTENTION :</strong> Toute personne ajoutée à la dernière minute sera facturée du montant de la formule complète.</p>
-                            
-                            <p>Nous demandons un <strong>acompte de 100€</strong> au plus tôt afin de finaliser la réservation. (maximum 1 semaine à l'avance)</p>
-                            
-                            <p>Nous vous proposons un <a href="assets/files/Carton-anniversaire.pdf" target="_blank" class="link-primary">carton d'invitation à télécharger</a> directement sur le site ou a venir récupérer sur place.</p>
+                <div class="package-accordion container-narrow">
+                    <div class="accordion accordion-custom" id="anniversaireAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAnniversaire" aria-expanded="false" aria-controls="collapseAnniversaire">
+                                    <span class="accordion-title">Organisation de l'anniversaire</span>
+                                    <span class="accordion-icon">+</span>
+                                </button>
+                            </h2>
+                            <div id="collapseAnniversaire" class="accordion-collapse collapse" data-bs-parent="#anniversaireAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>La date :</strong> plus tôt vous réservez, plus tôt vous vous assurez d'avoir le créneau qui vous conviendra. La réservation de cette formule doit se faire au maximum 1 semaine à l'avance.</p>
+                                    
+                                    <p><strong>La réservation :</strong> le plus simple est de nous contacter par téléphone au <a href="tel:0781547691" class="link-primary">07.81.54.76.91</a> ou nous envoyer un courriel en nous communiquant vos coordonnées téléphoniques.</p>
+                                    
+                                    <p>Le minimum de participants pour la formule anniversaire est de <strong>6 personnes</strong> (Le tarif reste inchangé en dessous du minimum de participants).</p>
+                                    
+                                    <p>En cas d'absence le jour de la prestation, un montant de <strong>5€ par personne manquante</strong> sera demandé. À partir de 3 personnes manquantes la tarification complète de la formule sera due.</p>
+                                    
+                                    <p>Le nombre de participants et le choix du gâteau sont à confirmer maximum 1 semaine à l'avance.</p>
+                                    
+                                    <p><strong class="text-warning">ATTENTION :</strong> Toute personne ajoutée à la dernière minute sera facturée du montant de la formule complète.</p>
+                                    
+                                    <p>Nous demandons un <strong>acompte de 100€</strong> au plus tôt afin de finaliser la réservation. (maximum 1 semaine à l'avance)</p>
+                                    
+                                    <p>Nous vous proposons un <a href="assets/files/Carton-anniversaire.pdf" target="_blank" class="link-primary">carton d'invitation à télécharger</a> directement sur le site ou a venir récupérer sur place.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -644,10 +685,12 @@
                     <div class="team-building-content">
                         <div class="team-building-icon">👔</div>
                         <h3 class="team-building-title">Team Building sur mesure</h3>
-                        <p class="team-building-description">
-                            Renforcez la cohésion de votre équipe avec nos activités adaptées. 
-                            Tarifs personnalisés selon vos besoins et le nombre de participants.
-                        </p>
+                        <div class="container-small">
+                            <p class="team-building-description">
+                                Renforcez la cohésion de votre équipe avec nos activités adaptées. 
+                                Tarifs personnalisés selon vos besoins et le nombre de participants.
+                            </p>
+                        </div>
                         <a href="tel:0781547691" class="btn btn-secondary">Demander un devis</a>
                     </div>
                 </div>
@@ -659,11 +702,13 @@
     <section id="contact" class="section section-contact">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Contactez-nous</h2>
-                <p class="section-subtitle">Nous sommes là pour répondre à toutes vos questions</p>
+                <div class="container-small">
+                    <h2 class="section-title">Contactez-nous</h2>
+                    <p class="section-subtitle">Nous sommes là pour répondre à toutes vos questions</p>
+                </div>
             </div>
             
-            <div class="contact-content">
+            <div class="contact-content container-medium">
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="contact-icon">📞</div>
@@ -694,6 +739,17 @@
                         <div class="contact-details">
                             <h3 class="contact-label">Instagram</h3>
                             <a href="https://www.instagram.com/lasergamesgap" target="_blank" class="contact-value">@lasergamesgap</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div class="contact-details">
+                            <h3 class="contact-label">Horaires</h3>
+                            <div class="contact-hours-value">
+                                <div class="contact-hours-main">Mercredi - Dimanche : 10h - 23h</div>
+                                <div class="contact-hours-note">(Variable pendant les périodes de vacances scolaires et jours fériés)</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -750,6 +806,13 @@
                             <li><a href="tel:0781547691">07.81.54.76.91</a></li>
                             <li><a href="https://lasergamesgap.fr">lasergamesgap.fr</a></li>
                         </ul>
+                        <div class="footer-hours">
+                            <h4 class="footer-title">Horaires</h4>
+                            <div class="footer-hours-content">
+                                <div class="footer-hours-main">Mercredi - Dimanche : 10h - 23h</div>
+                                <div class="footer-hours-note">(Variable pendant les périodes de vacances scolaires et jours fériés)</div>
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="footer-column">
@@ -782,7 +845,8 @@
         <span class="floating-cta-text">Réserver</span>
     </a>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/gallery-carousel.js"></script>
 </body>
 </html>
