@@ -1,0 +1,19 @@
+# robots.txt pour Laser Game Gap
+# Contrôle l'indexation par les moteurs de recherche
+
+User-agent: *
+Allow: /
+
+# Bloquer l'indexation des fichiers sensibles
+Disallow: /assets/files/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /*.min.css$
+Disallow: /*.min.js$
+
+# Autoriser les images pour l'indexation
+Allow: /assets/images/
+
+# Sitemap (ajoutez l'URL de votre sitemap si vous en avez un)
+# Sitemap: https://lasergamesgap.fr/sitemap.xml
+

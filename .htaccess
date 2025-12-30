@@ -1,0 +1,16 @@
+# ============================================
+# Protection de la racine du projet
+# Bloquer TOUT accès - Seul le dossier public/ doit être accessible
+# ============================================
+
+# Désactiver le listing des répertoires
+Options -Indexes
+
+# Bloquer TOUT accès
+Order deny,allow
+Deny from all
+
+# Si vous avez configuré votre serveur web pour pointer vers /public,
+# ce fichier ne devrait jamais être lu.
+# Ce fichier est une sécurité supplémentaire en cas de mauvaise configuration.
+

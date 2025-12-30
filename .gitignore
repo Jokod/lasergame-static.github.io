@@ -1,0 +1,25 @@
+# Fichiers minifiés
+*.min.css
+*.min.js
+
+# Dépendances npm
+node_modules/
+package-lock.json
+
+# Fichiers de configuration sensibles
+.env
+.env.local
+.env.*.local
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Fichiers de sauvegarde
+*.bak
+*.backup
+*.tmp
