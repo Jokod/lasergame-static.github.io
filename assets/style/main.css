@@ -1676,6 +1676,7 @@ nav h1 {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     max-width: 100%;
+    text-align: center;
 }
 
 .evg-price {
